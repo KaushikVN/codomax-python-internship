@@ -1,0 +1,30 @@
+[
+    {
+        "id": "101",
+        "name": "KAUSHIK",
+        "course": "Python Development",
+        "marks": 92.0,
+        "grade": "A+"
+    },
+    {
+        "id": "102",
+        "name": "NAGASHYAN",
+        "course": "Java",
+        "marks": 86.0,
+        "grade": "A"
+    },
+    {
+        "id": "103",
+        "name": "RAHIL",
+        "course": "C++",
+        "marks": 89.0,
+        "grade": "A"
+    },
+    {
+        "id": "104",
+        "name": "CHIRANTHANA",
+        "course": "C Programming",
+        "marks": 87.0,
+        "grade": "A"
+    }
+]
