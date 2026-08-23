@@ -1,23 +1,47 @@
-# Student Record Management System — Python Module 2
+# Codomax Python Development Internship
 
-A modular command-line interface (CLI) application built for **Module 2: Functions, Files & Exception Handling** under the **Codomax Digital Solutions Python Development Internship**.
-
----
-
-## 🌟 Key Features
-- **Functions & Modularity:** Modular architecture featuring parameter passing, return values, helper functions, and lambda sorting.
-- **List Comprehensions:** Fast search querying, ID lookup validation, and record filtering.
-- **File I/O Operations:** Persistent storage using structured **JSON** format with optional **CSV** export capabilities.
-- **Robust Exception Handling:** Implemented `try-except-finally` blocks and custom value checks to handle empty inputs, invalid types, out-of-range marks, and missing files.
+A modular repository containing all internship assignments, projects, and object-oriented implementations for Codomax Digital Solutions.
 
 ---
 
-## 🛠️ Tech Stack
-- **Language:** Python 3.x
-- **Standard Modules:** `json`, `csv`, `os`
+## 🏦 Module 3: Object-Oriented Python Banking System
 
----
+An enterprise-patterned banking application built using core Object-Oriented Programming (OOP) principles.
 
-## 🚀 How to Run
-```bash
-python student_manager.py
+### 📐 Clean Architecture Class Diagram
+
+```text
+               +----------------------------------+
+               |        <<abstract>> Account      |
+               +----------------------------------+
+               | - _account_number: str           |
+               | - _holder_name: str              |
+               | - __balance: float (Private)     |
+               | - _transactions: list            |
+               +----------------------------------+
+               | + deposit(amount: float): bool   |
+               | + withdraw(amount: float)*: bool |
+               | + display_statement(): void      |
+               | + to_dict(): dict                |
+               +-----------------+----------------+
+                                 |
+                 +---------------+---------------+
+                 |                               |
+                 v                               v
++-------------------------------+ +--------------------------------+
+|        SavingsAccount         | |         CurrentAccount         |
++-------------------------------+ +--------------------------------+
+| + min_balance: float = 500.0  | | + overdraft_limit: float = 5000|
++-------------------------------+ +--------------------------------+
+| + withdraw(amount: float)     | | + withdraw(amount: float)      |
++-------------------------------+ +--------------------------------+
+
+                 +--------------------------------+
+                 |              Bank              |
+                 +--------------------------------+
+                 | + accounts: dict               |
+                 +--------------------------------+
+                 | + create_account()             |
+                 | + get_account()                |
+                 | + save_data() / load_data()    |
+                 +--------------------------------+
