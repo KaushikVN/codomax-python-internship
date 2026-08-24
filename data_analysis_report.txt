@@ -1,0 +1,20 @@
+==================================================
+CODOMAX PYTHON INTERNSHIP: MODULE 4 ANALYSIS REPORT
+==================================================
+Total Records Processed: 100
+Total Unique Users: 10
+
+Statistical Summary (Body Word Count):
+- Mean Word Count: 23.85
+- Median Word Count: 24.00
+- Standard Deviation: 3.85
+- Max Word Count: 32
+- Min Word Count: 16
+
+Statistical Summary (Title Character Length):
+- Mean Title Length: 39.52
+- Max Title Length: 79
+- Min Title Length: 12
+
+Report Generated Successfully.
+==================================================
